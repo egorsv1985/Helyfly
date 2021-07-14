@@ -1,0 +1,66 @@
+.main {
+	background-color: silver;
+	color: $primaryColor;
+	@include background (url("../images/main-block/main-block-bg.jpg"));
+	
+	.container {
+		@extend %container;
+	}
+
+	// .main__inner
+	&__inner {
+		@include flex (center, $flex-direction: column);
+		height: 655px;
+	}
+
+	// .main__title
+	&__title {
+		@include font (32px, 39px, 700);
+		color: $primaryColor;
+		max-width: 247px;
+
+		span {
+			color: $accentColor;
+		}
+
+
+	}
+
+	// .main__price-box
+	&__price-box {
+		@include wh-px (200, 86);
+		@include background (url("../images/main-block/main-block-price-box.svg"));
+		@include flex (space-around);
+	}
+
+	// .main__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+
+	// .main__price-label
+	&__price-label {
+		@include font (18px, inherit);
+	}
+
+	&__price {
+		@include font (30px, inherit);
+	}
+
+	// .main__percent
+	&__percent {
+		border-radius: 50%;
+		filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.25)), drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+		max-height: 47px;
+	}
+
+	// .main__btn
+	&__btn {
+		@include wh(100%, 68px);
+		max-width: 275px;
+		@include border (3px, solid, $primaryColor);
+		border-radius: 7px;
+		@include font (16px, 20px, 900, center);
+		filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.7)), drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+	}
+}
