@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-.header .container, .main .container {
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 @media screen and (min-width: 576px) {
     .header .container, .main .container {
         padding: 0 35px;
@@ -22,6 +15,15 @@
 @media screen and (min-width: 1280px) {
     .header .container, .main .container {
         padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header .container, .main .container {
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
     }
 }
 
@@ -50,6 +52,7 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
+    min-width: 320px;
 }
 
 /* проблема переполнения */
@@ -727,6 +730,12 @@ template {
     color: #37373F;
 }
 
+@media screen and (min-width: 1280px) {
+    .header__user {
+        display: none;
+    }
+}
+
 .home {
     background-color: #62D0DF;
 }
@@ -807,6 +816,33 @@ template {
     background-position: 63%;
 }
 
+@media only screen and (min-width: 768px) {
+    .main {
+        background-size: 230%;
+        background-position: 56%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .main {
+        background-size: 140%;
+        background-position: 50%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .main {
+        background-size: 134%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .main {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 .main__inner {
     display: -ms-flexbox;
     display: flex;
@@ -815,6 +851,12 @@ template {
     -ms-flex-direction: column;
     flex-direction: column;
     height: 655px;
+}
+
+@media only screen and (min-width: 768px) {
+    .main__inner {
+        height: 839px;
+    }
 }
 
 .main__title {

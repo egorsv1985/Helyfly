@@ -19,18 +19,23 @@ $textColor: #37373F;
 $textColorLight: #B3B3B3;
 $linkColor: #5286EC;
 
+
+$breakpoints: (
+	xs: 576px,
+	sm: 768px,
+	md: 1280px,
+	lg: 1440px
+);
+
 %container {
-	
-	@media screen and (min-width: 576px) {
-		padding: 0 35px;		
+	@include media (xs) {
+		padding: 0 35px;
 	}
-	@media  screen and (min-width: 768px) {
+
+	@include media (sm) {
 		padding: 0 50px;
 	}
-	@media  screen and (min-width: 1280px) {
-		padding: 0 50px;
-	}
-	@media  screen and (min-width: 1440px) {
+	@include media (lg) {
 		max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
