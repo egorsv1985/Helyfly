@@ -20,10 +20,7 @@ $textColorLight: #B3B3B3;
 $linkColor: #5286EC;
 
 %container {
-	max-width: 1140px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 15px;
+	
 	@media screen and (min-width: 576px) {
 		padding: 0 35px;		
 	}
@@ -32,5 +29,11 @@ $linkColor: #5286EC;
 	}
 	@media  screen and (min-width: 1280px) {
 		padding: 0 50px;
+	}
+	@media  screen and (min-width: 1440px) {
+		max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
 	}
 }

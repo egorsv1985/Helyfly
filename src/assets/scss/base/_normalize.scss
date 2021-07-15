@@ -23,21 +23,17 @@ html {
   /* 2 */
 
   font-size: 100%;
-
-
 }
 
 body {
-  font-family: "Larsseit", sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
+  min-width: 320px;
 }
-
-
 
 /* проблема переполнения */
 // * {
 // 	outline: solid 1px red;
-// } 
+// }
 
 /* Sections
    ========================================================================== */
@@ -45,8 +41,6 @@ body {
 /**
  * Remove the margin in all browsers.
  */
-
-
 
 ul,
 p,
@@ -72,7 +66,6 @@ h6 {
 a,
 img {
   display: block;
-
 }
 
 main {
@@ -83,7 +76,6 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-
 
 /* Grouping content
    ========================================================================== */
@@ -202,7 +194,6 @@ sup {
 
 img {
   border-style: none;
-
 }
 
 /* Forms

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.header .container {
+.header .container, .main .container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
@@ -8,19 +8,19 @@
 }
 
 @media screen and (min-width: 576px) {
-    .header .container {
+    .header .container, .main .container {
         padding: 0 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header .container {
+    .header .container, .main .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .header .container {
+    .header .container, .main .container {
         padding: 0 50px;
     }
 }
@@ -49,7 +49,7 @@ html {
 }
 
 body {
-    font-family: "Larsseit", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* проблема переполнения */
@@ -409,23 +409,30 @@ template {
 }
 
 @font-face {
-    font-family: "Larsseit";
-  src: url("./../fonts/Larsseit.woff2") format("woff2");
+    font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-    font-family: "Larsseit";
-  src: url("./../fonts/Larsseit-Medium.woff2") format("woff2");
-  font-weight: 500;
+    font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
-    font-family: "Larsseit";
-  src: url("./../fonts/Larsseit-Bold.woff2") format("woff2");
-  font-weight: 700;
+    font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.woff2") format("woff2");
+  font-weight: 900;
   font-display: swap;
 }
 
@@ -703,22 +710,21 @@ template {
 
 @media screen and (min-width: 576px) {
     .header__phone {
-        display: block;
+        display: -ms-flexbox;
+        display: flex;
     }
 }
 
 .header__phone span {
     font-size: 14px;
     line-height: 17px;
-    font-family: Montserrat;
     color: #B3B3B3;
 }
 
-.header__phone__link {
+.header__phone-link {
     font-size: 14px;
     line-height: 17px;
-    font-family: Montserrat;
-    color: #5286EC;
+    color: #37373F;
 }
 
 .home {
@@ -792,60 +798,103 @@ template {
     max-height: 604px;
 }
 
-.about {
-    padding-top: 150px;
+.main {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/main-block/main-block-bg.jpg");
+    background-position: 63%;
 }
 
-@media only screen and (max-width: 900px) {
-    .about {
-        padding-top: 70px;
-    }
-}
-
-.about__wrapper {
+.main__inner {
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 655px;
 }
 
-@media only screen and (max-width: 900px) {
-    .about__wrapper {
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-align: center;
-        align-items: center;
+.main__title {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 247px;
+    margin-bottom: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+    .main__title {
+        max-width: 600px;
     }
 }
 
-.about__title {
+.main__title span {
+    color: #FC9B09;
+}
+
+.main__price-box {
+    width: 200px;
+    height: 86px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/main-block/main-block-price-box.svg");
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.main__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 8px 0 18px 16px;
+}
+
+.main__price-label {
+    font-size: 18px;
+    line-height: inherit;
+}
+
+.main__price {
+    font-size: 30px;
+    line-height: inherit;
+    font-weight: 800;
+}
+
+.main__percent {
+    width: 77px;
+    height: 77px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+}
+
+.main__btn {
+    width: 100%;
+    height: 68px;
+    max-width: 275px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 7px;
     font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin-right: 182px;
-}
-
-@media only screen and (max-width: 900px) {
-    .about__title {
-        text-align: center;
-        margin-bottom: 25px;
-        margin-right: 0;
-    }
-}
-
-.about__text {
-    line-height: 37px;
-    font-weight: 500;
-    letter-spacing: 0.005em;
-    max-width: 600px;
-}
-
-@media only screen and (max-width: 900px) {
-    .about__text {
-        text-align: center;
-        font-size: 20px;
-    }
+    line-height: 20px;
+    font-weight: 900;
+    text-align: center;
+    -webkit-filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.7)), drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+    filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.7)), drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+    margin-bottom: 15px;
 }
 
 .services {
