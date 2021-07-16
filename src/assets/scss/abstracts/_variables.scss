@@ -39,5 +39,8 @@ $breakpoints: (
 	@include media (sm) {
 		padding: 0 50px;
 	}
+	@include media (md) {
+		padding: 0 15px;
+	}
 	
 }

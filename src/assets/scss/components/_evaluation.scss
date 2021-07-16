@@ -1,23 +1,35 @@
-
 .evaluation {
-	@include flex ();
+	@include flex ($align-items: center);
+	height: 70px;
+	border-top: 0.5px solid $secondaryColor;
+	border-bottom: 0.5px solid $secondaryColor;
+	@include media (xs) {
+		height: 85px;
+	}
 	// .evaluation__wrapper
 	&__wrapper {
-		@include flex ($flex-direction: column);
+		
+		@include flex (center, $flex-direction: column);
+		
 		margin-left: 10px;
+		@include media (xs) {
+			@include flex ($align-items: center, $flex-direction: row);
+		}
 	}
+
 	&__text {
-	@include font (14px, 20px);
-	color: $textColor;
-font-size: 14px;
-line-height: 20px;
-margin-bottom: 4px;
+		@include font (14px, 20px);
+		color: $textColor;
+		margin-bottom: 4px;
+
+		@include media (xs) {
+			@include font (18px, 26px, 500);
+		}
 
 	}
+
 	// .evaluation__svg
 	&__svg {
 		@include wh (118px, 17px)
 	}
 }
-
-
