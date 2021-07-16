@@ -1,0 +1,23 @@
+
+.evaluation {
+	@include flex ();
+	// .evaluation__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+		margin-left: 10px;
+	}
+	&__text {
+	@include font (14px, 20px);
+	color: $textColor;
+font-size: 14px;
+line-height: 20px;
+margin-bottom: 4px;
+
+	}
+	// .evaluation__svg
+	&__svg {
+		@include wh (118px, 17px)
+	}
+}
+
+

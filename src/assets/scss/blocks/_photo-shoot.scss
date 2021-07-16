@@ -1,0 +1,58 @@
+.photo-shoot {
+	padding-top: 37px;
+	.container {
+		@extend %container;
+	}
+
+	// .photo-shoot__title
+	&__title {
+		@include font (28px, 34px, 400, $text-align: center);
+		color: $textColor;
+		max-width: 185px;
+		margin: 0 auto 12px;
+		
+	}
+
+	// .photo-shoot__video
+	&__video {
+		margin-bottom: 32px;
+	}
+
+	// .photo-shoot__text
+	&__text {
+		@include font (14px, 20px);
+		color: $textColor;
+		margin-bottom: 34px;
+		max-width: 292px;
+	}
+
+	// .photo-shoot__wrapper
+	&__wrapper {
+		@include flex (center, $flex-direction: column);
+		margin-bottom: 50px;
+	}
+
+	// .photo-shoot__box
+	&__box {
+		@include flex ($align-items: center);
+	}
+	&__box + &__box {
+		margin-top: 20px;
+	}
+	// .photo-shoot__svg
+	&__svg {
+		height: 100%;
+	}
+
+	// .photo-shoot__subtitle
+	&__subtitle {
+		@include font (14px, 20px, 500);
+		color: $textColor;
+		margin-left: 10px;
+	}
+
+	// .photo-shoot__evaluation
+	&__evaluation {
+		
+	}
+}

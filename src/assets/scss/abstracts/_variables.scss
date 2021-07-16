@@ -28,6 +28,10 @@ $breakpoints: (
 );
 
 %container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
 	@include media (xs) {
 		padding: 0 35px;
 	}
@@ -35,10 +39,5 @@ $breakpoints: (
 	@include media (sm) {
 		padding: 0 50px;
 	}
-	@include media (lg) {
-		max-width: 1170px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 15px;
-	}
+	
 }
