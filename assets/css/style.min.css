@@ -667,12 +667,13 @@ template {
     .photo-package {
       padding-top: 20px; } }
   .photo-package .container {
-    margin: 0;
     padding-right: 0; }
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       .photo-package .container {
-        padding: 0 0 0 35px;
-        margin: 0; } }
+        padding-right: 50px; } }
+    @media (min-width: 1280px) {
+      .photo-package .container {
+        padding-right: 15px; } }
   .photo-package__title {
     font-size: 26px;
     line-height: 32px;
@@ -709,9 +710,8 @@ template {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
         gap: 10px;
-        max-width: 615px;
-        margin: 0 auto;
-        padding-right: 60px; } }
+        max-width: 568px;
+        margin: 0 auto 20px; } }
   @media (min-width: 768px) and (min-width: 1280px) {
     .photo-package__wrapper {
       grid-template-columns: repeat(4, 1fr);
@@ -730,5 +730,44 @@ template {
     height: 185px;
     object-fit: cover;
     border-radius: 4px; }
+  .photo-package__inner {
+    display: none; }
+    @media (min-width: 768px) {
+      .photo-package__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+        border-bottom: 0.5px solid #C7C7C7; } }
+  .photo-package__show-text {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #5286EC;
+    position: relative; }
+    .photo-package__show-text::before {
+      content: "";
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../images/photo-package/Arrow.svg");
+      width: 11px;
+      height: 6px;
+      position: absolute;
+      top: 12px;
+      right: -22px; }
+    .photo-package__show-text::after {
+      content: "";
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../images/photo-package/Arrow.svg");
+      width: 11px;
+      height: 6px;
+      position: absolute;
+      top: 12px;
+      left: -22px; }
 
 /*# sourceMappingURL=style.min.css.map */
