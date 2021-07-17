@@ -1,17 +1,24 @@
 .photo-package {
 	margin: 0 auto;
 	padding-top: 60px;
+
 	@include media (lg) {
 		padding-top: 20px;
 	}
+
 	.container {
 		@extend %container;
-		margin: 0;
+
 		padding-right: 0;
-		@include media (xs) {
-			padding: 0 0 0 35px;
-			margin: 0;
+		@include media (sm) {
+			padding-right: 50px;
 		}
+		@include media (md) {
+			padding-right: 15px;
+		}
+
+
+
 	}
 
 	// .photo-package__title
@@ -54,9 +61,9 @@
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(4, 1fr);
 			gap: 10px;
-			max-width: 615px;
-			margin: 0 auto;
-			padding-right: 60px;
+			max-width: 568px;
+			margin: 0 auto 20px;
+			
 
 
 
@@ -88,4 +95,38 @@
 		object-fit: cover;
 		border-radius: 4px;
 	}
+
+
+	// .photo-package__inner
+	&__inner {
+		display: none;
+
+		@include media (sm) {
+			@include flex (center, center);
+			height: 75px;
+			border-bottom: 0.5px solid $secondaryColor;
+		}
+
+	}
+
+	// .photo-package__show-text
+	&__show-text {
+		@include font (17px, 25px, 500);
+		color: $linkColor;
+		position: relative;
+
+		&::before {
+			@include pseudo;
+			@include background (url("../images/photo-package/Arrow.svg"));
+			@include wh-px (11, 6);
+			@include pos (absolute, $top: 12px, $right: -22px);
+		}
+		&::after {
+			@include pseudo;
+			@include background (url("../images/photo-package/Arrow.svg"));
+			@include wh-px (11, 6);
+			@include pos (absolute, $top: 12px, $left: -22px);
+		}
+	}
+
 }
