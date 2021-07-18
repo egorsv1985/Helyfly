@@ -16,10 +16,7 @@
 		@include media (md) {
 			padding-right: 15px;
 		}
-
-
-
-	}
+		}
 
 	// .photo-package__title
 	&__title {
@@ -110,7 +107,7 @@
 	}
 
 	// .photo-package__show-text
-	&__show-text {
+	&__inner {
 		@include font (17px, 25px, 500);
 		color: $linkColor;
 		position: relative;
