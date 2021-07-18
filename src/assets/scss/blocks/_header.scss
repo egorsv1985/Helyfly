@@ -46,7 +46,7 @@
 		@include font (14px, 17px);
 
 		font-family: Montserrat;
-		color: #5286EC;
+		color: $linkColor;
 
 		@media screen and (min-width: 576px) {
 			display: none;
