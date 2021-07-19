@@ -1,0 +1,39 @@
+.schedule {
+
+	// .schedule__title
+	&__title {
+		@include font (26px, 32px, 400, center);
+		color: $textColor;
+	}
+
+	// .schedule__grid
+	&__grid {}
+
+	// .schedule__box
+	&__box {}
+
+	// .schedule__text
+	&__text {
+		@include font (18px, 26px, 400);
+		color: $textColor;
+	}
+
+	// .schedule__btn
+	&__btn {
+		@include wh-px (129, 50);
+		@include font (14px, 17px, 500, center);
+		color: $accentColor;
+		@include border (2px, solid, $accentColor);
+		border-radius: 3px;
+	}
+}
+
+.text {}
+
+.text--bold {
+	font-weight: 600;
+}
+
+
+.btn {}
+

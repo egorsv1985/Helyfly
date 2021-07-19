@@ -943,4 +943,33 @@ template {
     color: #5286EC;
     letter-spacing: -0.6px; }
 
+.schedule__title {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: center;
+  color: #37373F; }
+
+.schedule__text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #37373F; }
+
+.schedule__btn {
+  width: 129px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: #FC9B09;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #FC9B09;
+  border-radius: 3px; }
+
+.text--bold {
+  font-weight: 600; }
+
 /*# sourceMappingURL=style.min.css.map */
