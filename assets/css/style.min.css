@@ -870,7 +870,7 @@ template {
       padding-top: 40px; } }
   @media (min-width: 1280px) {
     .info {
-      padding-top: 35px; } }
+      padding-top: 30px; } }
   .info__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -887,8 +887,8 @@ template {
         row-gap: 10px; } }
     @media (min-width: 1280px) {
       .info__grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 270px 1fr; } }
+        grid-template-columns: 1fr 520px;
+        grid-template-rows: 1fr 225px; } }
   .info__box {
     display: flex;
     flex-direction: column; }
@@ -904,6 +904,9 @@ template {
     @media (min-width: 576px) {
       .info__title {
         margin-bottom: 15px; } }
+    @media (min-width: 1280px) {
+      .info__title {
+        margin-bottom: 10px; } }
   .info__text {
     font-size: 16px;
     line-height: 24px;
@@ -915,6 +918,9 @@ template {
     @media (min-width: 768px) {
       .info__text {
         max-width: 590px; } }
+    @media (min-width: 1280px) {
+      .info__text {
+        margin-bottom: 20px; } }
   .info__inner {
     position: relative;
     margin-bottom: 20px; }
