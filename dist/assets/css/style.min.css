@@ -1,17 +1,17 @@
 @charset "UTF-8";
-.header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container {
+.header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px; }
   @media (min-width: 576px) {
-    .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container {
+    .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container {
       padding: 0 35px; } }
   @media (min-width: 768px) {
-    .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container {
+    .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container {
       padding: 0 50px; } }
   @media (min-width: 1280px) {
-    .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container {
+    .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container {
       padding: 0 15px; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -943,33 +943,47 @@ template {
     color: #5286EC;
     letter-spacing: -0.6px; }
 
-.schedule__title {
-  font-size: 26px;
-  line-height: 32px;
-  font-weight: 400;
-  text-align: center;
-  color: #37373F; }
-
-.schedule__text {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #37373F; }
-
-.schedule__btn {
-  width: 129px;
-  height: 50px;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 500;
-  text-align: center;
-  color: #FC9B09;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #FC9B09;
-  border-radius: 3px; }
+.schedule {
+  padding-top: 5px; }
+  .schedule__title {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: #37373F;
+    margin-bottom: 40px; }
+  .schedule__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    border: 1px solid #C7C7C7;
+    padding-top: 20px; }
+  .schedule__box {
+    border-bottom: 0.5px solid #C7C7C7; }
+  .schedule__text {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #37373F;
+    margin-bottom: 10px; }
+  .schedule__btn {
+    width: 129px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    text-align: center;
+    color: #FC9B09;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FC9B09;
+    border-radius: 3px;
+    margin: 20px 0 30px; }
 
 .text--bold {
   font-weight: 600; }
+
+.text--center {
+  text-align: center; }
 
 /*# sourceMappingURL=style.min.css.map */

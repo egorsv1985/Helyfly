@@ -1,21 +1,35 @@
 .schedule {
+	padding-top: 5px;
+	.container {
+		@extend %container;
+	}
 
 	// .schedule__title
 	&__title {
 		@include font (26px, 32px, 400, center);
 		color: $textColor;
+		margin-bottom: 40px;
 	}
 
 	// .schedule__grid
-	&__grid {}
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 1fr);
+		border: 1px solid $secondaryColor;
+		padding-top: 20px;
+	}
 
 	// .schedule__box
-	&__box {}
+	&__box {
+		border-bottom: 0.5px solid $secondaryColor;
+	}
 
 	// .schedule__text
 	&__text {
 		@include font (18px, 26px, 400);
 		color: $textColor;
+		margin-bottom: 10px;
 	}
 
 	// .schedule__btn
@@ -25,6 +39,7 @@
 		color: $accentColor;
 		@include border (2px, solid, $accentColor);
 		border-radius: 3px;
+		margin: 20px 0 30px;
 	}
 }
 
@@ -34,6 +49,9 @@
 	font-weight: 600;
 }
 
+.text--center {
+	text-align: center;
+}
+
 
 .btn {}
-
