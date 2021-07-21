@@ -1,11 +1,9 @@
 .evaluation {
 	@include flex ($align-items: center);
-	height: 70px;
+	
 	border-top: 0.5px solid $secondaryColor;
 	border-bottom: 0.5px solid $secondaryColor;
-	@include media (xs) {
-		height: 85px;
-	}
+	
 	// .evaluation__wrapper
 	&__wrapper {
 		
