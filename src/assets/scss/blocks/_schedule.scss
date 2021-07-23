@@ -25,10 +25,14 @@
 		grid-template-rows: 60px repeat(2, 1fr) 100px;
 		border: 1px solid $secondaryColor;
 		@include media (xs) {
-			grid-template-rows: 75px repeat(2, 1fr) 100px;
+			grid-template-rows: 75px repeat(2, 1fr) 130px;
 		}
 		
 	}
+	
+		
+
+
 
 
 
@@ -36,8 +40,8 @@
 	// .schedule__box
 	&__box {
 		border-bottom: 0.5px solid $secondaryColor;
-		@include flex (center, flex-start, $flex-direction: column);
-		padding: 27px 0 30px 20px;
+		@include flex (space-between, flex-start, );
+		padding: 20px 20px 10px 20px;
 	}
 
 	// .schedule__box--up
@@ -46,16 +50,29 @@
 		padding: 10px 0 0;
 		@include media (xs) {
 			align-items: flex-start;
-			padding: 22px 0 0 20px;
+			padding: 30px 0 0 20px;
 
 		}
 	}
+	// .schedule__wrap
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+	}
+	// .schedule__text
+	&__text {}
+	// .schedule__button-box
+	&__button-box {
+		padding: 15px 0 0;
+	}
+	// .schedule__btn
+	&__btn {}
 
 	// .schedule__text
 	&__text {
 		@include font (18px, 26px, 400);
 		color: $textColor;
-		margin-bottom: 10px;
+		margin-bottom: 7px;
 	}
 
 	// .schedule__btn
@@ -73,6 +90,7 @@
 		&__evaluation {
 			border: none;
 			justify-content: center;
+			padding: 0 0 0 15px;
 
 		}
 
