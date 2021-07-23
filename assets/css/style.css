@@ -456,15 +456,8 @@ template {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    height: 70px;
     border-top: 0.5px solid #C7C7C7;
     border-bottom: 0.5px solid #C7C7C7;
-}
-
-@media (min-width: 576px) {
-    .evaluation {
-        height: 85px;
-    }
 }
 
 .evaluation__wrapper {
@@ -988,6 +981,16 @@ template {
     }
 }
 
+.photo-shoot__evaluation {
+    height: 70px;
+}
+
+@media (min-width: 576px) {
+    .photo-shoot__evaluation {
+        height: 85px;
+    }
+}
+
 @media (min-width: 1280px) {
     .photo-shoot__inner {
         grid-area: 2/1/4/2;
@@ -1359,6 +1362,12 @@ template {
     padding-top: 5px;
 }
 
+@media (min-width: 576px) {
+    .schedule {
+        padding-top: 20px;
+    }
+}
+
 .schedule__title {
     font-size: 26px;
     line-height: 32px;
@@ -1368,16 +1377,51 @@ template {
     margin-bottom: 40px;
 }
 
+@media (min-width: 576px) {
+    .schedule__title {
+        font-size: 26px;
+        line-height: 38px;
+    }
+}
+
 .schedule__grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 60px repeat(2, 1fr) 100px;
     border: 1px solid #C7C7C7;
-    padding-top: 20px;
+}
+
+@media (min-width: 576px) {
+    .schedule__grid {
+        grid-template-rows: 75px repeat(2, 1fr) 100px;
+    }
 }
 
 .schedule__box {
     border-bottom: 0.5px solid #C7C7C7;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 27px 0 30px 20px;
+}
+
+.schedule__box--up {
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0 0;
+}
+
+@media (min-width: 576px) {
+    .schedule__box--up {
+        -ms-flex-align: start;
+        align-items: flex-start;
+        padding: 22px 0 0 20px;
+    }
 }
 
 .schedule__text {
@@ -1400,7 +1444,13 @@ template {
     border-style: solid;
     border-color: #FC9B09;
     border-radius: 3px;
-    margin: 20px 0 30px;
+    margin: 5px 0 0;
+}
+
+.schedule__evaluation {
+    border: none;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .text--bold {
