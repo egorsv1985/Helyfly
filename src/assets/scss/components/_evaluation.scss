@@ -13,9 +13,7 @@
 		@include media (xs) {
 			@include flex ($align-items: center, $flex-direction: row);
 		}
-		@include media (sm) {
-			padding-bottom: 10px;
-		}
+		
 	}
 
 	&__text {
@@ -25,11 +23,10 @@
 
 		@include media (xs) {
 			@include font (18px, 26px, 500);
-		}
-		@include media (sm) {
 			margin-bottom: 0;
 			margin-right: 10px;
 		}
+		
 
 	}
 
