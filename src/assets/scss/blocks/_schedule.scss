@@ -1,5 +1,6 @@
 .schedule {
 	padding-top: 5px;
+	padding-bottom: 45px;
 
 	@include media (xs) {
 		padding-top: 20px;
@@ -94,7 +95,7 @@
 
 	// .schedule__button-box
 	&__button-box {
-		padding: 8px 0 0;
+		padding: 12px 0 0;
 
 		@include media (xs) {
 			padding: 0;

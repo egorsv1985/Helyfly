@@ -481,12 +481,6 @@ template {
     }
 }
 
-@media (min-width: 768px) {
-    .evaluation__wrapper {
-        padding-bottom: 10px;
-    }
-}
-
 .evaluation__text {
     font-size: 14px;
     line-height: 20px;
@@ -499,11 +493,6 @@ template {
         font-size: 18px;
         line-height: 26px;
         font-weight: 500;
-    }
-}
-
-@media (min-width: 768px) {
-    .evaluation__text {
         margin-bottom: 0;
         margin-right: 10px;
     }
@@ -621,6 +610,28 @@ template {
     max-width: 200px;
 }
 
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+/* Лента слайдов */
+.slick-track {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
 .header {
     background-color: #fff;
 }
@@ -1360,11 +1371,24 @@ template {
 
 .schedule {
     padding-top: 5px;
+    padding-bottom: 45px;
 }
 
 @media (min-width: 576px) {
     .schedule {
         padding-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .schedule {
+        padding-top: 47px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .schedule {
+        padding-top: 60px;
     }
 }
 
@@ -1384,6 +1408,32 @@ template {
     }
 }
 
+@media (min-width: 768px) {
+    .schedule__title {
+        font-size: 20px;
+        line-height: 29px;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .schedule__title {
+        font-size: 28px;
+        line-height: 41px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 1440px) {
+    .schedule__title {
+        font-size: 20px;
+        line-height: 29px;
+        font-weight: 500;
+    }
+}
+
 .schedule__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -1393,7 +1443,13 @@ template {
 
 @media (min-width: 576px) {
     .schedule__grid {
-        grid-template-rows: 75px repeat(2, 1fr) 100px;
+        grid-template-rows: 75px repeat(2, 1fr) 130px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .schedule__grid {
+        max-width: 770px;
     }
 }
 
@@ -1407,7 +1463,28 @@ template {
     align-items: flex-start;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 27px 0 30px 20px;
+    padding: 27px 20px 30px 20px;
+}
+
+@media (min-width: 576px) {
+    .schedule__box {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-top: 15px;
+        padding-bottom: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .schedule__box {
+        padding: 15px 30px 12px 30px;
+    }
 }
 
 .schedule__box--up {
@@ -1418,9 +1495,30 @@ template {
 
 @media (min-width: 576px) {
     .schedule__box--up {
-        -ms-flex-align: start;
-        align-items: flex-start;
-        padding: 22px 0 0 20px;
+        padding: 15px 0 0 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .schedule__box--up {
+        padding-left: 28px;
+    }
+}
+
+.schedule__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.schedule__button-box {
+    padding: 12px 0 0;
+}
+
+@media (min-width: 576px) {
+    .schedule__button-box {
+        padding: 0;
     }
 }
 
@@ -1429,7 +1527,7 @@ template {
     line-height: 26px;
     font-weight: 400;
     color: #37373F;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .schedule__btn {
@@ -1444,13 +1542,26 @@ template {
     border-style: solid;
     border-color: #FC9B09;
     border-radius: 3px;
-    margin: 5px 0 0;
 }
 
 .schedule__evaluation {
     border: none;
     -ms-flex-pack: center;
     justify-content: center;
+    padding: 0 0 0 15px;
+}
+
+@media (min-width: 576px) {
+    .schedule__evaluation {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    .schedule__evaluation {
+        padding-left: 25px;
+    }
 }
 
 .text--bold {
