@@ -27,6 +27,12 @@
 
 	// .photo-box__img
 	&__img {}
+	
+		// .photo-box__wrap
+		&__wrap {
+			@include flex (center, flex-start, $flex-direction: column);
+		}
+
 
 	// .photo-box__title
 	&__title {
