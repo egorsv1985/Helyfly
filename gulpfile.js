@@ -24,6 +24,7 @@ const notify = require('gulp-notify'); //предоставляет информ
 const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
 
 
+
 // Пути 
 const srcPath = 'src/';
 const distPath = 'dist/';
@@ -275,6 +276,9 @@ function clean(cb) {
     cb();
 }
 
+
+
+
 // Для слежки за файлами. Перезагрузит страницу, если что-то изменится 
 function watchFiles() {
     gulp.watch([path.watch.html], html);
@@ -283,6 +287,7 @@ function watchFiles() {
     gulp.watch([path.watch.images], images);
     gulp.watch([path.watch.fonts], fonts);
 }
+
 
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build
@@ -301,6 +306,7 @@ exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+exports.deploy = deploy;
 
 
 // На сервер (или заказчику) пойдет только папка dist
