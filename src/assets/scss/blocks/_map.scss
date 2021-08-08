@@ -1,5 +1,8 @@
 .map {
-
+	@include media (md) {
+		position: relative;
+		margin-top: 30px;
+	}
 	// .map__location
 	&__location {
 		@include media (xs) {
@@ -36,11 +39,19 @@
 		@include media (xs) {
 			padding-left: 20px;
 		}
+		@include media (md) {
+			padding-left: 0;
+			margin-top: 5px;
+		}
+
 	}
 
 	// .map__photo-box
 	&__photo-box {
 		@include flex ($align-items: flex-start, $flex-direction: row);
+		@include media (xs) {
+			justify-content: flex-start;
+		}
 	}
 
 	.slick-initialized .slick-slide {
@@ -73,22 +84,25 @@
 		// .photo-box__title
 		&__title {
 			@include font (16px, 20px);
-			
+			@include media (md) {
+				@include font (18px, 22px);
+			}					
 		}
 
 		// .photo-box__text
 		&__text {
 			text-align: left;
 			margin-bottom: 5px;
-
 		}
-
 
 		// .photo-box__link
 		&__link {
 			text-align: left;
 			@include media (xs) {
 				max-width: 155px;
+			}
+			@include media (md) {
+				max-width: 100%;
 			}
 		
 		}
