@@ -19,7 +19,7 @@
 		
 		@include media (xs) {
 			border-bottom: 0.5px solid $secondaryColor;
-			grid-template-rows: 270px 1fr 290px;
+			grid-template-rows: 270px 1fr 310px;
 			row-gap: 20px;
 			}
 			@include media (sm) {

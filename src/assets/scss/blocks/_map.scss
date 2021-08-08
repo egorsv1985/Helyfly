@@ -1,5 +1,13 @@
 .map {
 
+	// .map__location
+	&__location {
+		@include media (xs) {
+			height: 509px;
+		}
+	}
+
+
 	// .map__wrapper
 	&__wrapper {
 		@include flex ($align-items:center, $flex-direction: column);
@@ -7,6 +15,13 @@
 		border: 1px solid $secondaryColor;
 		margin: 50px auto 40px;
 		padding-top: 50px;
+
+		@include media (xs) {
+			width: 400px;
+		}
+		@include media (md) {
+			display: none;
+		}
 	}
 
 	// .map__slider
@@ -16,13 +31,16 @@
 
 	// .map__content
 	&__content {
-		padding: 0 0 0 30px;
+		padding-left: 30px;
 		margin-top: 35px;
+		@include media (xs) {
+			padding-left: 20px;
+		}
 	}
 
 	// .map__photo-box
 	&__photo-box {
-		@include flex (center, flex-start, $flex-direction: row);
+		@include flex ($align-items: flex-start, $flex-direction: row);
 	}
 
 	.slick-initialized .slick-slide {
@@ -54,23 +72,25 @@
 
 		// .photo-box__title
 		&__title {
-			@include font (16px, 20px, 500);
-			color: $textColor;
+			@include font (16px, 20px);
+			
 		}
 
 		// .photo-box__text
 		&__text {
 			text-align: left;
 			margin-bottom: 5px;
-			
+
 		}
 
 
 		// .photo-box__link
 		&__link {
 			text-align: left;
-			@include font (14px, 21px, 500);
-			color: $linkColor;
+			@include media (xs) {
+				max-width: 155px;
+			}
+		
 		}
 	}
 
