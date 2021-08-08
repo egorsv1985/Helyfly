@@ -2,10 +2,11 @@
 
 	// .map__wrapper
 	&__wrapper {
-		@include flex (center, center, $flex-direction: column);
+		@include flex ($align-items:center, $flex-direction: column);
 		@include wh(274px, 480px);
 		border: 1px solid $secondaryColor;
 		margin: 50px auto 40px;
+		padding-top: 50px;
 	}
 
 	// .map__slider

@@ -452,7 +452,7 @@ template {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px; }
+    margin-bottom: 20px; }
     .photo-box__pseudo::before {
       content: "";
       display: block;
@@ -471,7 +471,7 @@ template {
   .photo-box__wrap {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column; }
   .photo-box__title {
     font-size: 18px;
@@ -544,17 +544,17 @@ template {
     background-size: cover;
     background-image: url("../images/map/map-arrow.svg");
     position: absolute;
-    top: -50%;
+    top: 25%;
     z-index: 10;
-    width: 19px;
-    height: 10px;
+    width: 11px;
+    height: 19px;
     color: #C7C7C7;
     font-size: 0; }
   .slider .slick-prev {
-    left: 0; }
+    left: 10%; }
   .slider .slick-next {
-    right: 0;
-    transform: rotateY(180deg); }
+    right: 6%;
+    transform: translateY(-50%) rotateY(180deg); }
   .slider .slick-dots {
     display: flex;
     justify-content: center;
@@ -1158,13 +1158,13 @@ template {
 
 .map__wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 274px;
   height: 480px;
   border: 1px solid #C7C7C7;
-  margin: 50px auto 40px; }
+  margin: 50px auto 40px;
+  padding-top: 50px; }
 
 .map__slider {
   width: 100%; }

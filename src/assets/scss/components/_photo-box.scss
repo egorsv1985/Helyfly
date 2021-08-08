@@ -10,7 +10,7 @@
 	&__pseudo {
 		position: relative;
 		@include flex (center, center);
-		margin-bottom: 25px;
+		margin-bottom: 20px;
 		
 
 		&::before {
@@ -30,7 +30,7 @@
 	
 		// .photo-box__wrap
 		&__wrap {
-			@include flex (center, flex-start, $flex-direction: column);
+			@include flex (center, center, $flex-direction: column);
 		}
 
 

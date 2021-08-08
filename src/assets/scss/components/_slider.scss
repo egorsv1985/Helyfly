@@ -115,22 +115,21 @@
 
 	.slick-arrow {
 		@include background (url("../images/map/map-arrow.svg"));
-		@include pos (absolute, $top: -50%);
+		@include pos (absolute, $top: 25%);
 		z-index: 10;
-		@include wh(19px, 10px);
+		@include wh(11px, 19px);
 		color: $secondaryColor;
 		font-size: 0;
-
 
 	}
 
 	.slick-prev {
-		left: 0;
+		left: 10%;
 	}
 
 	.slick-next {
-		right: 0;
-		transform: rotateY(180deg);
+		right: 6%;
+		transform: translateY(-50%) rotateY(180deg);
 	}
 
 	.slick-dots {
