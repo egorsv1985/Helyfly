@@ -104,7 +104,7 @@
 	&__item-text {
 		@include font (16px, 23px, 500, center);
 		color: $textColor;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 	}
 
 	// .slider__item-info
@@ -115,7 +115,7 @@
 
 	.slick-arrow {
 		@include background (url("../images/map/map-arrow.svg"));
-		@include pos (absolute, $top: 25%);
+		@include pos (absolute, $top: 28%);
 		z-index: 10;
 		@include wh(11px, 19px);
 		color: $secondaryColor;

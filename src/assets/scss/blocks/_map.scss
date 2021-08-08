@@ -3,7 +3,7 @@
 	// .map__wrapper
 	&__wrapper {
 		@include flex ($align-items:center, $flex-direction: column);
-		@include wh(274px, 480px);
+		@include wh(274px, 380px);
 		border: 1px solid $secondaryColor;
 		margin: 50px auto 40px;
 		padding-top: 50px;
@@ -17,7 +17,7 @@
 	// .map__content
 	&__content {
 		padding: 0 0 0 30px;
-		margin-top: 25px;
+		margin-top: 35px;
 	}
 
 	// .map__photo-box
@@ -27,6 +27,7 @@
 
 	.slick-initialized .slick-slide {
 		@include flex (center, center);
+		margin-bottom: 5px;
 	}
 
 	.photo-box {
@@ -48,7 +49,7 @@
 
 		// .photo-box__wrap
 		&__wrap {
-			justify-content: flex-start;
+			@include flex (flex-start, flex-start);
 		}
 
 		// .photo-box__title
@@ -59,8 +60,9 @@
 
 		// .photo-box__text
 		&__text {
-			@include font (14px, 21px);
-			color: $textColor;
+			text-align: left;
+			margin-bottom: 5px;
+			
 		}
 
 

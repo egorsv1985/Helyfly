@@ -1,9 +1,10 @@
 .photo-box {
 	max-width: 275px;
 	@include flex (center, center, $flex-direction: column);
+
 	@include media (xs) {
 		max-width: 100%;
-		
+
 	}
 
 	// .photo-box__pseudo
@@ -11,27 +12,28 @@
 		position: relative;
 		@include flex (center, center);
 		margin-bottom: 20px;
-		
+
 
 		&::before {
 			@include pseudo;
 			@include background (url("../images/info/info-hearts.svg"));
 			@include wh-px (31, 27);
 			@include pos (absolute, $top: -6%, $right: -60%);
+
 			@include media (xs) {
 				right: -55%;
 			}
-			
+
 		}
 	}
 
 	// .photo-box__img
 	&__img {}
-	
-		// .photo-box__wrap
-		&__wrap {
-			@include flex (center, center, $flex-direction: column);
-		}
+
+	// .photo-box__wrap
+	&__wrap {
+		@include flex (center, center, $flex-direction: column);
+	}
 
 
 	// .photo-box__title
