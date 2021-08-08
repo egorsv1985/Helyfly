@@ -1,0 +1,97 @@
+.reviews {
+
+	border-bottom: 0.5px solid $secondaryColor;
+
+	.container {
+		@extend %container;
+		// padding-right: 0;
+
+		// @include media (sm) {
+		// 	padding-right: 50px;
+		// }
+
+		// @include media (md) {
+		// 	padding-right: 15px;
+		// }
+	}
+
+	// .reviews__title
+	&__title {
+		@include font (26px, 151.16%, 400, center);
+		color: $textColor;
+		margin-bottom: 40px;
+	}
+
+	// .reviews__evaluation
+	&__evaluation {
+		border: none;
+		margin-bottom: 25px;
+	}
+
+	// .reviews__wrap
+	&__wrap {
+		padding-bottom: 40px;
+		@include flex ($flex-direction: column);
+	}
+
+	// .reviews__span
+	&__span {
+		@include font (14px, 21px, 400);
+		color: $textColorLight;
+		position: relative;
+		padding-left: 20px;
+
+		&::before {
+			@include pseudo;
+			@include background (url("../images/reviews/reviews-vector.svg"));
+			@include pos (absolute, $top: 0, $left: 0);
+			@include wh(17px, 15px);
+		}
+	}
+
+	// .reviews__text
+	&__text {
+		@include font (14px, 21px, 400);
+		color: $textColor;
+		margin: 15px 0 40px;
+
+		@include media (xs) {
+			margin-bottom: 15px;
+		}
+
+
+	}
+
+	// .reviews__date
+	&__date {
+		@include font (14px, 21px, 400);
+		color: $textColorLight;
+	}
+
+	.evaluation {
+
+		// .evaluation__img
+		&__img {}
+
+		// .evaluation__wrapper
+		&__wrapper {
+			margin-left: 20px;
+
+			@include media (xs) {
+				@include flex ($align-items: flex-start, $flex-direction: column);
+			}
+		}
+
+		// .evalution__title
+		&__title {}
+
+		// .evaluation__text
+		&__text {
+			margin-bottom: 10px;
+
+		}
+
+		// .evaluation__svg
+		&__svg {}
+	}
+}

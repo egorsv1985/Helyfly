@@ -306,7 +306,7 @@ exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
-exports.deploy = deploy;
+
 
 
 // На сервер (или заказчику) пойдет только папка dist

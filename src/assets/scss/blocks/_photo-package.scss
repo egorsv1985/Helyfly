@@ -10,13 +10,15 @@
 		@extend %container;
 
 		padding-right: 0;
+
 		@include media (sm) {
 			padding-right: 50px;
 		}
+
 		@include media (md) {
 			padding-right: 15px;
 		}
-		}
+	}
 
 	// .photo-package__title
 	&__title {
@@ -60,7 +62,7 @@
 			gap: 10px;
 			max-width: 568px;
 			margin: 0 auto 20px;
-			
+
 
 
 
@@ -118,6 +120,7 @@
 			@include wh-px (11, 6);
 			@include pos (absolute, $top: 12px, $right: -22px);
 		}
+
 		&::after {
 			@include pseudo;
 			@include background (url("../images/photo-package/Arrow.svg"));

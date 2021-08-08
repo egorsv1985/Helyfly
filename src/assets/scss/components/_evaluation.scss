@@ -1,20 +1,28 @@
 .evaluation {
 	@include flex ($align-items: center);
-	
+
 	border-top: 0.5px solid $secondaryColor;
 	border-bottom: 0.5px solid $secondaryColor;
-	
+
 	// .evaluation__wrapper
 	&__wrapper {
-		
+
 		@include flex (center, $flex-direction: column);
-		
+
 		margin-left: 10px;
+
 		@include media (xs) {
 			@include flex ($align-items: center, $flex-direction: row);
 		}
-		
+
 	}
+
+	// .evalution__title
+	&__title {
+		@include font (16px, 20px, 500);
+		color: $textColor;
+		margin-bottom: 5px;
+		}
 
 	&__text {
 		@include font (14px, 20px);
@@ -26,7 +34,7 @@
 			margin-bottom: 0;
 			margin-right: 10px;
 		}
-		
+
 
 	}
 
