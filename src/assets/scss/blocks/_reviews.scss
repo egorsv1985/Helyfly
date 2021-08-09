@@ -48,10 +48,24 @@
 			@include media (md) {
 				left: 10%;
 			}
+
 			@include media (lg) {
 				left: 7%;
 			}
 
+		}
+	}
+
+
+	// .reviews__article
+	&__article {
+		margin-bottom: 28px;
+
+		&:nth-of-type(3) {
+			display: none;
+			@include media (xs) {
+				display: block;
+			}
 		}
 	}
 
@@ -74,6 +88,11 @@
 		@include media (sm) {
 			margin-bottom: 0;
 		}
+
+		@include media (lg) {
+			align-items: flex-start;
+			padding-top: 10px;
+		}
 	}
 
 	// .reviews__inner
@@ -84,7 +103,6 @@
 			align-self: flex-end;
 			padding-left: 10px;
 			padding-bottom: 10px;
-
 		}
 	}
 
@@ -99,19 +117,19 @@
 		&::before {
 			@include pseudo;
 			@include background (url("../images/reviews/reviews-vector.svg"));
-			@include pos (absolute, $top: 0, $left: 0);
+			@include pos (absolute, $top: 0, $left: -8%);
 			@include wh(17px, 15px);
 
 			@include media (sm) {
 				left: -9%;
 			}
-			
+
 		}
 	}
 
 	// .reviews__wrap
 	&__wrap {
-		padding-bottom: 40px;
+		padding-bottom: 38px;
 		@include flex ($flex-direction: column);
 		border-bottom: 0.5px solid $secondaryColor;
 
@@ -151,6 +169,22 @@
 		color: $textColorLight;
 	}
 
+	// .reviews__link
+	&__link {
+		@include font (17px, 25px, 500, center);
+		color: $linkColor;
+		padding: 10px 15px 0 0;	
+		position: relative;
+		&::after {
+			@include pseudo;
+			@include background (url("../images/reviews/reviews-link-arrow.png"));
+			@include pos (absolute, $top:50%, $right:19%);
+			@include wh (6px, 11px);
+
+		}	
+	}
+
+
 	.evaluation {
 
 		// .evaluation__img
@@ -166,6 +200,10 @@
 
 			@include media (xs) {
 				@include flex ($align-items: flex-start, $flex-direction: column);
+			}
+
+			@include media (lg) {
+				padding-top: 10px;
 			}
 		}
 
