@@ -1,6 +1,6 @@
 .reviews {
 
-	border-bottom: 0.5px solid $secondaryColor;
+
 
 	.container {
 		@extend %container;
@@ -20,34 +20,88 @@
 		@include font (26px, 151.16%, 400, center);
 		color: $textColor;
 		margin-bottom: 40px;
+		position: relative;
+
+		@include media (sm) {
+			@include font (20px, 29px, $text-align: left);
+		}
+
+		&::after {
+			display: none;
+			content: ":";
+			@include pos (absolute, $top:0, $left: 12%);
+
+			@include media (sm) {
+				display: block;
+			}
+
+		}
 	}
+
+	// .reviews__box
+	&__box {
+		@include flex ($flex-direction: column);
+
+		@include media (sm) {
+			@include flex ($flex-direction: row);
+		}
+	}
+
 
 	// .reviews__evaluation
 	&__evaluation {
 		border: none;
 		margin-bottom: 25px;
+
+		@include media (sm) {
+			margin-bottom: 0;
+		}
 	}
 
-	// .reviews__wrap
-	&__wrap {
-		padding-bottom: 40px;
-		@include flex ($flex-direction: column);
+	// .reviews__inner
+	&__inner {
+		padding-left: 20px;
+
+		@include media (sm) {
+			align-self: flex-end;
+			padding-left: 10px;
+			padding-bottom: 10px;
+
+		}
 	}
+
 
 	// .reviews__span
 	&__span {
 		@include font (14px, 21px, 400);
 		color: $textColorLight;
 		position: relative;
-		padding-left: 20px;
+
 
 		&::before {
 			@include pseudo;
 			@include background (url("../images/reviews/reviews-vector.svg"));
 			@include pos (absolute, $top: 0, $left: 0);
 			@include wh(17px, 15px);
+
+			@include media (sm) {
+				left: -9%;
+			}
 		}
 	}
+
+	// .reviews__wrap
+	&__wrap {
+		padding-bottom: 40px;
+		@include flex ($flex-direction: column);
+		border-bottom: 0.5px solid $secondaryColor;
+
+		@include media (sm) {
+			padding-left: 120px;
+			padding-bottom: 25px;
+		}
+	}
+
 
 	// .reviews__text
 	&__text {
@@ -59,8 +113,14 @@
 			margin-bottom: 15px;
 		}
 
+		@include media (sm) {
+			@include font (16px, 24px);
+		}
 
 	}
+
+
+
 
 	// .reviews__date
 	&__date {
@@ -71,7 +131,11 @@
 	.evaluation {
 
 		// .evaluation__img
-		&__img {}
+		&__img {
+			@include media (sm) {
+				@include wh (101px);
+			}
+		}
 
 		// .evaluation__wrapper
 		&__wrapper {
@@ -88,6 +152,10 @@
 		// .evaluation__text
 		&__text {
 			margin-bottom: 10px;
+
+			@include media (sm) {
+				@include font (16px, 24px);
+			}
 
 		}
 

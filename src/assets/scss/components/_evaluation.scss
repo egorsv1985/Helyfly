@@ -22,7 +22,11 @@
 		@include font (16px, 20px, 500);
 		color: $textColor;
 		margin-bottom: 5px;
+
+		@include media (sm) {
+			@include font (18px, 22px);
 		}
+	}
 
 	&__text {
 		@include font (14px, 20px);
