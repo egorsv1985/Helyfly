@@ -1314,6 +1314,10 @@ template {
     .map .photo-box__link {
       max-width: 100%; } }
 
+@media (min-width: 1280px) {
+  .reviews {
+    padding-top: 130px; } }
+
 .reviews__title {
   font-size: 26px;
   line-height: 151.16%;
@@ -1326,7 +1330,16 @@ template {
     .reviews__title {
       font-size: 20px;
       line-height: 29px;
+      font-weight: 500;
       text-align: left; } }
+  @media (min-width: 1280px) {
+    .reviews__title {
+      font-size: 28px;
+      line-height: 146.28%; } }
+  @media (min-width: 1440px) {
+    .reviews__title {
+      font-size: 20px;
+      line-height: 29px; } }
   .reviews__title::after {
     display: none;
     content: ":";
@@ -1336,6 +1349,12 @@ template {
     @media (min-width: 768px) {
       .reviews__title::after {
         display: block; } }
+    @media (min-width: 1280px) {
+      .reviews__title::after {
+        left: 10%; } }
+    @media (min-width: 1440px) {
+      .reviews__title::after {
+        left: 7%; } }
 
 .reviews__box {
   display: flex;
@@ -1391,6 +1410,9 @@ template {
     .reviews__wrap {
       padding-left: 120px;
       padding-bottom: 25px; } }
+  @media (min-width: 1280px) {
+    .reviews__wrap {
+      max-width: 630px; } }
 
 .reviews__text {
   font-size: 14px;
@@ -1405,6 +1427,9 @@ template {
     .reviews__text {
       font-size: 16px;
       line-height: 24px; } }
+  @media (min-width: 1280px) {
+    .reviews__text {
+      margin-bottom: 10px; } }
 
 .reviews__date {
   font-size: 14px;
