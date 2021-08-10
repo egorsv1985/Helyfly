@@ -60,6 +60,9 @@
 	// .reviews__article
 	&__article {
 		margin-bottom: 28px;
+		@include media (md) {
+			margin-bottom: 30px;
+		}
 
 		&:nth-of-type(3) {
 			display: none;
@@ -84,6 +87,7 @@
 	&__evaluation {
 		border: none;
 		margin-bottom: 25px;
+		min-width: 300px;
 
 		@include media (sm) {
 			margin-bottom: 0;
@@ -98,11 +102,16 @@
 	// .reviews__inner
 	&__inner {
 		padding-left: 20px;
+		
+
 
 		@include media (sm) {
 			align-self: flex-end;
 			padding-left: 10px;
-			padding-bottom: 10px;
+			padding-bottom: 5px;
+			&--center{
+				padding-bottom: 20px;
+			}
 		}
 	}
 
@@ -112,7 +121,7 @@
 		@include font (14px, 21px, 400);
 		color: $textColorLight;
 		position: relative;
-
+		
 
 		&::before {
 			@include pseudo;
@@ -152,10 +161,14 @@
 
 		@include media (xs) {
 			margin-bottom: 15px;
+			
 		}
 
 		@include media (sm) {
 			@include font (16px, 24px);
+			&--top {
+				margin-top: 0;
+			}
 		}
 
 		@include media (md) {
@@ -175,13 +188,39 @@
 		color: $linkColor;
 		padding: 10px 15px 0 0;	
 		position: relative;
+		@include media (sm) {
+			padding-right: 0;
+			padding-left: 5px;
+		}
+		@include media (md) {
+			padding-top: 15px;}
+		
 		&::after {
 			@include pseudo;
 			@include background (url("../images/reviews/reviews-link-arrow.png"));
 			@include pos (absolute, $top:50%, $right:19%);
 			@include wh (6px, 11px);
-
+			@include media (sm) {
+				transform: rotate(90deg);
+				right: 35%;				
+			}
+			@include media (md) {				
+				right: 41%;				
+			}
 		}	
+		&::before {
+			display: none;
+			@include media (sm) {
+				@include pseudo;
+			@include background (url("../images/reviews/reviews-link-arrow.png"));
+			@include pos (absolute, $top:50%, $left:36%);
+			@include wh (6px, 11px);
+			transform: rotate(90deg);
+			}
+			@include media (md) {				
+				left: 41%;				
+			}
+		}
 	}
 
 
@@ -213,10 +252,12 @@
 		// .evaluation__text
 		&__text {
 			margin-bottom: 10px;
-
-			@include media (sm) {
-				@include font (16px, 24px);
+			@include font (14px, 21px, 400);
+			@include media (xs) {
+				@include font (14px, 21px);
 			}
+			
+			
 
 		}
 

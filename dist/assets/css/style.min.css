@@ -1358,6 +1358,9 @@ template {
 
 .reviews__article {
   margin-bottom: 28px; }
+  @media (min-width: 1280px) {
+    .reviews__article {
+      margin-bottom: 30px; } }
   .reviews__article:nth-of-type(3) {
     display: none; }
     @media (min-width: 576px) {
@@ -1374,7 +1377,8 @@ template {
 
 .reviews__evaluation {
   border: none;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  min-width: 300px; }
   @media (min-width: 768px) {
     .reviews__evaluation {
       margin-bottom: 0; } }
@@ -1389,7 +1393,9 @@ template {
     .reviews__inner {
       align-self: flex-end;
       padding-left: 10px;
-      padding-bottom: 10px; } }
+      padding-bottom: 5px; }
+      .reviews__inner--center {
+        padding-bottom: 20px; } }
 
 .reviews__span {
   font-size: 14px;
@@ -1438,7 +1444,9 @@ template {
   @media (min-width: 768px) {
     .reviews__text {
       font-size: 16px;
-      line-height: 24px; } }
+      line-height: 24px; }
+      .reviews__text--top {
+        margin-top: 0; } }
   @media (min-width: 1280px) {
     .reviews__text {
       margin-bottom: 10px; } }
@@ -1457,6 +1465,13 @@ template {
   color: #5286EC;
   padding: 10px 15px 0 0;
   position: relative; }
+  @media (min-width: 768px) {
+    .reviews__link {
+      padding-right: 0;
+      padding-left: 5px; } }
+  @media (min-width: 1280px) {
+    .reviews__link {
+      padding-top: 15px; } }
   .reviews__link::after {
     content: "";
     display: block;
@@ -1469,6 +1484,32 @@ template {
     right: 19%;
     width: 6px;
     height: 11px; }
+    @media (min-width: 768px) {
+      .reviews__link::after {
+        transform: rotate(90deg);
+        right: 35%; } }
+    @media (min-width: 1280px) {
+      .reviews__link::after {
+        right: 41%; } }
+  .reviews__link::before {
+    display: none; }
+    @media (min-width: 768px) {
+      .reviews__link::before {
+        content: "";
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../images/reviews/reviews-link-arrow.png");
+        position: absolute;
+        top: 50%;
+        left: 36%;
+        width: 6px;
+        height: 11px;
+        transform: rotate(90deg); } }
+    @media (min-width: 1280px) {
+      .reviews__link::before {
+        left: 41%; } }
 
 @media (min-width: 768px) {
   .reviews .evaluation__img {
@@ -1487,10 +1528,13 @@ template {
       padding-top: 10px; } }
 
 .reviews .evaluation__text {
-  margin-bottom: 10px; }
-  @media (min-width: 768px) {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400; }
+  @media (min-width: 576px) {
     .reviews .evaluation__text {
-      font-size: 16px;
-      line-height: 24px; } }
+      font-size: 14px;
+      line-height: 21px; } }
 
 /*# sourceMappingURL=style.min.css.map */
