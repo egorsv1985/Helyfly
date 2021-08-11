@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="/assets/fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin>
+
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
@@ -16,12 +19,12 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__wrapper">
                     <a class="header__logo-link" href="#">
-                        <img src="./assets/images/header/header-logo.svg" alt="logo" class="header__logo">
+                        <img class="header__logo" src="./assets/images/header/header-logo.svg" alt="logo">
                     </a>
                     <a class="header__phone-city" href="tel:88001231212">Москва</a>
                     <div class="header__phone">
@@ -34,7 +37,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </header>
 
     <section class="main">
         <div class="container">
@@ -388,11 +391,62 @@
             <a class="reviews__link" href="#">Показать Все (134)</a>
         </div>
     </section>
+    <footer class="footer">
 
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a class="header__logo-link" href="#">
+                        <img class="header__logo" src="./assets/images/header/header-logo.svg" alt="logo">
+                    </a>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                <img class="footer__img" src="./assets/images/footer/footer-vk.png" alt="vk">
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                <img class="footer__img" src="./assets/images/footer/footer-facebook.png"
+                                    alt="facebook">
+                            </a>
+                        </li>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                <img class="footer__img" src="./assets/images/footer/footer-instragram.png"
+                                    alt="instragram">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__inner">
+                        <img class="footer__img" src="./assets/images/footer/footer-mc.png" alt="mastercard">
+                        <img class="footer__img" src="./assets/images/footer/footer-visa.png" alt="visa">
+                    </div>
+
+                    <span class="footer__span">RU</span>
+                    <div class="footer__wrap">
+                        <p class="footer__support">Тех. поддержка: 8(800)700-00-00
+                            <span class="footer__copyright">© 2018 HELYFLY. All Rights Reserved.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 </body>
 
 </html>
