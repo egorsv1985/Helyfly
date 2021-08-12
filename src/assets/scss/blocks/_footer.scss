@@ -1,0 +1,92 @@
+.footer {
+	.container {
+		@extend %container;
+	}
+
+	// .footer__top
+	&__top {
+		border-bottom: 0.5px solid $secondaryColor;
+	}
+
+	// .footer__wrapper
+	&__wrapper {
+		@include flex (space-between, center);
+	}
+
+	// .footer__logo
+	&__logo {}
+
+	// .footer__list
+	&__list {
+		@include flex (space-between, center);
+	}
+
+	// .footer__item
+	&__item {}
+
+	&__item+&__item {
+		margin-left: 30px;
+	}
+
+	// .footer__link
+	&__link {}
+
+	// .footer__img
+	&__img {}
+
+	// .footer__bottom
+	&__bottom {}
+
+	// .footer__grid
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		@include media (xs) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	// .footer__inner
+	&__inner {
+		@include flex ($align-items: center);
+		@include media (xs) {
+			grid-row-end: 2;
+		}
+	}
+
+	// .footer__board
+	&__board {}
+
+	&__board+&__board {
+		margin-left: 17px;
+	}
+
+	// .footer__span
+	&__span {
+		@include font (15px, 18px, 400, center);
+		color: $textColor;
+		@include media (xs) {
+			grid-row-end: 2;
+		}
+	}
+
+	// .footer__wrap
+	&__wrap {
+		grid-area: 2/1/3/3;
+		@include media (xs) {
+			grid-area: 1/2/2/3;
+		}
+	}
+
+	// .footer__support
+	&__support {
+		@include font (14px, 17px, 400, center);
+		color: $textColorLight;
+	}
+
+	// .footer__copyright
+	&__copyright {
+		@include font (14px, 17px, 400, center);
+		color: $textColorLight;
+	}
+}
