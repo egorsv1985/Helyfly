@@ -2292,6 +2292,10 @@ template {
     }
 }
 
+.footer {
+    padding-top: 80px;
+}
+
 .footer__top {
     border-bottom: 0.5px solid #C7C7C7;
 }
@@ -2352,6 +2356,8 @@ template {
     font-weight: 400;
     text-align: center;
     color: #37373F;
+    padding-right: 18px;
+    display: block;
 }
 
 @media (min-width: 576px) {
