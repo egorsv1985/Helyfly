@@ -1,5 +1,10 @@
 .footer {
-	padding-top: 80px;
+	padding: 80px 0 20px;
+	
+	
+	@include media (xs) {
+		padding-top: 70px;
+	}
 	.container {
 		@extend %container;
 	}
@@ -8,6 +13,9 @@
 	&__top {
 		border-bottom: 0.5px solid $secondaryColor;
 		padding-bottom: 20px;
+		@include media (xs) {
+			border: none;
+		}
 	}
 
 	// .footer__wrapper
@@ -16,7 +24,14 @@
 	}
 
 	// .footer__logo
-	&__logo {}
+	&__logo {
+		margin-right: 0;
+		@include media (xs) {
+			transform: scale(1.53);
+		padding-left: 20px;
+		}
+		
+	}
 
 	// .footer__list
 	&__list {
@@ -39,6 +54,10 @@
 	// .footer__bottom
 	&__bottom {
 		padding-top: 25px;
+		@include media (xs) {
+			background-color: $bgFooterColor;
+		}
+		
 	}
 
 	// .footer__grid
@@ -47,6 +66,7 @@
 		grid-template-columns: repeat(2, 1fr);
 		@include media (xs) {
 			grid-template-columns: repeat(3, 1fr);
+			padding-top: 25px;
 		}
 	}
 
@@ -59,10 +79,18 @@
 	}
 
 	// .footer__board
-	&__board {}
+	&__board {
+		@include media (xs) {
+			transform: scale(1.2);
+			padding-left: 5px;
+		}
+	}
 
 	&__board+&__board {
 		margin-left: 17px;
+		@include media (xs) {
+			margin-left: 20px;
+		}
 	}
 
 	// .footer__span
@@ -81,6 +109,7 @@
 
 		@include media (xs) {
 			grid-row-end: 2;
+			align-self: center;
 		}
 	}
 
@@ -90,6 +119,9 @@
 		margin-top: 25px;
 		@include media (xs) {
 			grid-area: 1/2/2/3;
+			min-width: 300px;
+			margin-top: 0;
+			margin-left: 20px;
 		}
 	}
 
@@ -106,5 +138,9 @@
 		color: $textColorLight;
 		display: block;
 		margin-top: 10px;
+		@include media (xs) {
+			margin-top: 5px;
+
+		}
 	}
 }
