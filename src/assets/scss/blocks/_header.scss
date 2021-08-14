@@ -1,6 +1,8 @@
 
 .header {
-	
+	.container {
+		@extend %container;
+	}
 	background-color: $primaryColor;
 
 	@media screen and (min-width: 768px) {

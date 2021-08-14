@@ -7,6 +7,7 @@
 	// .footer__top
 	&__top {
 		border-bottom: 0.5px solid $secondaryColor;
+		padding-bottom: 20px;
 	}
 
 	// .footer__wrapper
@@ -36,7 +37,9 @@
 	&__img {}
 
 	// .footer__bottom
-	&__bottom {}
+	&__bottom {
+		padding-top: 25px;
+	}
 
 	// .footer__grid
 	&__grid {
@@ -64,10 +67,17 @@
 
 	// .footer__span
 	&__span {
-		@include font (15px, 18px, 400, center);
+		@include font (15px, 18px, 400, right);
 		color: $textColor;
 		padding-right: 18px;
 		display: block;
+		position: relative;
+		&::after {
+			@include pseudo;
+			@include background (url("../images/photo-package/Arrow.svg"));
+			@include wh-px (11, 6);
+			@include pos (absolute, $top: 27%, $right: 0);
+		}
 
 		@include media (xs) {
 			grid-row-end: 2;
@@ -77,6 +87,7 @@
 	// .footer__wrap
 	&__wrap {
 		grid-area: 2/1/3/3;
+		margin-top: 25px;
 		@include media (xs) {
 			grid-area: 1/2/2/3;
 		}
@@ -86,11 +97,14 @@
 	&__support {
 		@include font (14px, 17px, 400, center);
 		color: $textColorLight;
+		
 	}
 
 	// .footer__copyright
 	&__copyright {
 		@include font (14px, 17px, 400, center);
 		color: $textColorLight;
+		display: block;
+		margin-top: 10px;
 	}
 }
