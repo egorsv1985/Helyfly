@@ -51,10 +51,11 @@
 		}
 
 		@include media (sm) {
-			max-width: 600px;
+			
 			@include font (40px, 49px);
 			margin-bottom: 25px;
 			margin-top: 35px;
+			max-width: 600px;
 		}
 
 		@include media (md) {
@@ -78,6 +79,7 @@
 		@include flex(space-around);
 		margin-bottom: 10px;
 		border-radius: 5px;
+
 		@include media (sm) {
 			@include wh-px(224, 96);
 			
@@ -88,6 +90,7 @@
 	&__wrapper {
 		@include flex(space-between, $flex-direction: column);
 		padding: 8px 0 18px 16px;
+		
 		@include media (sm) {
 		padding: 10px 0 12px 10px;}
 	}
@@ -122,10 +125,10 @@
 	// .main__btn
 	&__btn {
 		@include wh(275px, 68px);
-		
+		@include font(16px, 20px, 900, center);	
 		@include border(3px, solid, $primaryColor);
-		border-radius: 7px;
-		@include font(16px, 20px, 900, center);		
+
+		border-radius: 7px;			
 		margin-bottom: 15px;
 		@include media (sm) {
 			width: 304px;

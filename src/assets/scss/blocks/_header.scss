@@ -4,10 +4,10 @@
 		@extend %container;
 	}
 	background-color: $primaryColor;
-
-	@media screen and (min-width: 768px) {
+	@include media (sm) {
 		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
 	}
+
 
 	
 
@@ -15,7 +15,7 @@
 		@include flex (space-between, center);
 		height: 60px;
 
-		@media screen and (min-width: 768px) {
+		@include media (sm) {
 			height: 100px;
 		}
 	}
@@ -30,12 +30,10 @@
 
 	// .header__phone
 	&__phone-city {
-		@include font (14px, 17px);
-
-		font-family: Montserrat;
+		@include font (14px, 17px);		
 		color: $linkColor;
 
-		@media screen and (min-width: 576px) {
+		@include media (xs) {
 			display: none;
 		}
 	}
@@ -43,7 +41,7 @@
 	&__phone {
 		display: none;
 
-		@media screen and (min-width: 576px) {
+		@include media (xs) {
 			display: flex;
 		}
 
@@ -57,19 +55,14 @@
 		
 		@include font (14px, 17px);			
 		color: $textColor;
-
-
 	}
 
 	// .header__user
 	&__user {
-		@media screen and (min-width: 1280px) {
+		@include media (md) {
 			display: none;
 		}
 	}
-
-	// .header__user-icon
-	&__user-icon {}
 
 }
 
