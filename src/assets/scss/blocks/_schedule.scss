@@ -20,7 +20,7 @@
 	// .schedule__title
 	&__title {
 		@include font (26px, 32px, 400, center);
-		color: $textColor;
+	
 		margin-bottom: 40px;
 
 		@include media (xs) {
@@ -103,13 +103,10 @@
 
 	}
 
-	// .schedule__btn
-	&__btn {}
-
 	// .schedule__text
 	&__text {
 		@include font (18px, 26px, 400);
-		color: $textColor;
+		
 		margin-bottom: 7px;
 
 	}
@@ -144,15 +141,3 @@
 
 }
 
-.text {}
-
-.text--bold {
-	font-weight: 600;
-}
-
-.text--center {
-	text-align: center;
-}
-
-
-.btn {}

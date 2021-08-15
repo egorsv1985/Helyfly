@@ -1,5 +1,10 @@
 .map {
-
+	.container {
+		@extend %container;
+		// &--absolute {
+		// 	width: 420px;
+		// }
+	}
 	// .map__map-box
 	&__map-box {
 		display: none;
@@ -21,37 +26,7 @@
 
 	}
 
-	// .map__content
-	&__content {
-		
-	}
-
-	// .map__photo-box
-	&__photo-box {}
-
-	.item {
-		// .item__num
-		&__num {}
-		// .item__text
-		&__text {}
-		// .item__info
-		&__info {}
-	}
-	.photo-box {
-		// .photo-box__pseudo
-		&__pseudo {}
-		// .photo-box__img
-		&__img {}
-		// .photo-box__wrap
-		&__wrap {}
-		// .photo-box__title
-		&__title {}
-		// .photo-box__text
-		&__text {}
-		// .photo-box__link
-		&__link {}
-	}
-
+	
 }
 
 

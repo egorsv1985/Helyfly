@@ -27,8 +27,8 @@
 
 	// .photo-shoot__title
 	&__title {
-		@include font (28px, 34px, 400, $text-align: center);
-		color: $textColor;
+		@include font (28px, 34px, 400, center);
+		
 		max-width: 185px;
 		margin: 0 auto 12px;
 		order: -1;
@@ -78,7 +78,7 @@
 	// .photo-shoot__text
 	&__text {
 		@include font (14px, 20px);
-		color: $textColor;
+		
 		margin-bottom: 34px;
 		max-width: 292px;
 

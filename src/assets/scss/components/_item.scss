@@ -30,7 +30,7 @@
 	// .item__text
 	&__text {
 		@include font (16px, 23px, 500, center);
-		color: $textColor;
+		
 		margin-bottom: 5px;
 		@include media (md) {
 			@include font (18px, 27px);

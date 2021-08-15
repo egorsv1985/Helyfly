@@ -20,7 +20,7 @@
 	// .reviews__title
 	&__title {
 		@include font (26px, 151.16%, 400, center);
-		color: $textColor;
+		
 		margin-bottom: 40px;
 		position: relative;
 
@@ -268,8 +268,7 @@
 			}
 		}
 
-		// .evalution__title
-		&__title {}
+	
 
 		// .evaluation__text
 		&__text {
@@ -284,7 +283,5 @@
 
 		}
 
-		// .evaluation__svg
-		&__svg {}
 	}
 }
