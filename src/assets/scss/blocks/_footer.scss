@@ -29,15 +29,6 @@
 			padding-bottom: 45px;
 		}
 
-		@include media (md) {
-
-			padding-bottom: 55px;
-		}
-
-		@include media (el) {
-
-			padding-bottom: 45px;
-		}
 	}
 
 	// .footer__wrapper
@@ -71,18 +62,12 @@
 		}
 	}
 
-	// .footer__item
-	&__item {}
 
 	&__item+&__item {
 		margin-left: 30px;
 	}
 
-	// .footer__link
-	&__link {}
 
-	// .footer__img
-	&__img {}
 
 
 
@@ -93,7 +78,12 @@
 
 		@include media (xs) {
 			background-color: $bgFooterColor;
-			padding-top: 0;
+
+		}
+
+		@include media (sm) {
+			padding-top: 5px;
+
 		}
 
 	}
@@ -192,6 +182,11 @@
 			min-width: 300px;
 			margin-top: 0;
 			margin-left: 20px;
+		}
+
+		@include media (sm) {
+			margin-left: 0;
+
 		}
 
 		@include media (md) {

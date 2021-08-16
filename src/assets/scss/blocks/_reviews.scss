@@ -20,7 +20,7 @@
 	// .reviews__title
 	&__title {
 		@include font (26px, 151.16%, 400, center);
-		
+
 		margin-bottom: 40px;
 		position: relative;
 
@@ -190,12 +190,13 @@
 	&__link {
 		@include font (17px, 25px, 500, center);
 		color: $linkColor;
-		padding: 10px 15px 0 0;
+		padding: 0 15px 0 0;
 		position: relative;
 
 		@include media (sm) {
 			padding-right: 0;
 			padding-left: 5px;
+			padding-top: 10px;
 		}
 
 		@include media (md) {
@@ -268,7 +269,7 @@
 			}
 		}
 
-	
+
 
 		// .evaluation__text
 		&__text {

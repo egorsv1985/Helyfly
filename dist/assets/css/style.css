@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container, .reviews .container, .footer .container {
+.map .container, .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container, .reviews .container, .footer .container {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
@@ -8,19 +8,19 @@
 }
 
 @media (min-width: 576px) {
-    .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container, .reviews .container, .footer .container {
+    .map .container, .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container, .reviews .container, .footer .container {
         padding: 0 35px;
     }
 }
 
 @media (min-width: 768px) {
-    .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container, .reviews .container, .footer .container {
+    .map .container, .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container, .reviews .container, .footer .container {
         padding: 0 50px;
     }
 }
 
 @media (min-width: 1280px) {
-    .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container, .reviews .container, .footer .container {
+    .map .container, .header .container, .main .container, .photo-shoot .container, .photo-package .container, .info .container, .schedule .container, .reviews .container, .footer .container {
         padding: 0 15px;
     }
 }
@@ -485,7 +485,6 @@ template {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    color: #37373F;
     margin-bottom: 5px;
 }
 
@@ -800,7 +799,6 @@ template {
     line-height: 23px;
     font-weight: 500;
     text-align: center;
-    color: #37373F;
     margin-bottom: 5px;
 }
 
@@ -882,7 +880,7 @@ template {
     background-color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .header {
         box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     }
@@ -898,7 +896,7 @@ template {
     height: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .header__inner {
         height: 100px;
     }
@@ -914,11 +912,10 @@ template {
 .header__phone-city {
     font-size: 14px;
     line-height: 17px;
-    font-family: Montserrat;
     color: #5286EC;
 }
 
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
     .header__phone-city {
         display: none;
     }
@@ -928,7 +925,7 @@ template {
     display: none;
 }
 
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
     .header__phone {
         display: -ms-flexbox;
         display: flex;
@@ -947,7 +944,7 @@ template {
     color: #37373F;
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
     .header__user {
         display: none;
     }
@@ -1022,11 +1019,11 @@ template {
 
 @media (min-width: 768px) {
     .main__title {
-        max-width: 600px;
         font-size: 40px;
         line-height: 49px;
         margin-bottom: 25px;
         margin-top: 35px;
+        max-width: 600px;
     }
 }
 
@@ -1128,14 +1125,14 @@ template {
 .main__btn {
     width: 275px;
     height: 68px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #fff;
-    border-radius: 7px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 900;
     text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 7px;
     margin-bottom: 15px;
 }
 
@@ -1182,7 +1179,6 @@ template {
     line-height: 34px;
     font-weight: 400;
     text-align: center;
-    color: #37373F;
     max-width: 185px;
     margin: 0 auto 12px;
     -ms-flex-order: -1;
@@ -1241,7 +1237,6 @@ template {
 .photo-shoot__text {
     font-size: 14px;
     line-height: 20px;
-    color: #37373F;
     margin-bottom: 34px;
     max-width: 292px;
 }
@@ -1331,7 +1326,6 @@ template {
     font-size: 26px;
     line-height: 32px;
     text-align: center;
-    color: #37373F;
     max-width: 287px;
     margin: 0 auto 35px;
 }
@@ -1531,7 +1525,6 @@ template {
     font-size: 18px;
     line-height: 26px;
     font-weight: 500;
-    color: #37373F;
     margin-bottom: 10px;
 }
 
@@ -1550,7 +1543,6 @@ template {
 .info__text {
     font-size: 16px;
     line-height: 24px;
-    color: #37373F;
     margin-bottom: 38px;
 }
 
@@ -1627,7 +1619,6 @@ template {
     line-height: 32px;
     font-weight: 400;
     text-align: center;
-    color: #37373F;
     margin-bottom: 40px;
 }
 
@@ -1756,7 +1747,6 @@ template {
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
-    color: #37373F;
     margin-bottom: 7px;
 }
 
@@ -1792,14 +1782,6 @@ template {
     .schedule__evaluation {
         padding-left: 25px;
     }
-}
-
-.text--bold {
-    font-weight: 600;
-}
-
-.text--center {
-    text-align: center;
 }
 
 @media (min-width: 1280px) {
@@ -1956,7 +1938,6 @@ template {
     line-height: 151.16%;
     font-weight: 400;
     text-align: center;
-    color: #37373F;
     margin-bottom: 40px;
     position: relative;
 }
