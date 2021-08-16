@@ -1,7 +1,6 @@
 .footer {
 	padding-top: 80px;
 
-
 	@include media (xs) {
 		padding-top: 65px;
 	}
@@ -13,7 +12,6 @@
 	@include media (lg) {
 		padding-top: 85px;
 	}
-
 
 	.container {
 		@extend %container;
@@ -43,8 +41,6 @@
 	// .footer__logo
 	&__logo {
 		margin-right: 0;
-
-
 	}
 
 	// .footer__inner
@@ -62,30 +58,21 @@
 		}
 	}
 
-
 	&__item+&__item {
 		margin-left: 30px;
 	}
-
-
-
-
 
 	// .footer__bottom
 	&__bottom {
 		padding: 25px 0 20px;
 
-
 		@include media (xs) {
 			background-color: $bgFooterColor;
-
 		}
 
 		@include media (sm) {
 			padding-top: 5px;
-
 		}
-
 	}
 
 	// .footer__grid
@@ -106,7 +93,6 @@
 
 		@include media (lg) {
 			padding-top: 20px;
-
 		}
 	}
 
@@ -168,8 +154,6 @@
 			grid-row-end: 2;
 			align-self: center;
 		}
-
-
 	}
 
 	// .footer__wrap
@@ -186,7 +170,6 @@
 
 		@include media (sm) {
 			margin-left: 0;
-
 		}
 
 		@include media (md) {
@@ -199,7 +182,6 @@
 	&__support {
 		@include font (14px, 17px, 400, center);
 		color: $textColorLight;
-
 	}
 
 	// .footer__copyright
@@ -211,7 +193,6 @@
 
 		@include media (xs) {
 			margin-top: 5px;
-
 		}
 	}
 }

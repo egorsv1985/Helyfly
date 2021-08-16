@@ -35,12 +35,10 @@
 			grid-template-columns: 1fr 520px;
 			grid-template-rows: 1fr 225px;
 		}
-
 	}
 
 	// .info__box
 	&__box {
-
 		@include media (md) {
 			&:nth-child(2) {
 				order: -1;
@@ -51,7 +49,6 @@
 	// .info__title
 	&__title {
 		@include font (18px, 26px, 500);
-
 		margin-bottom: 10px;
 
 		@include media (xs) {
@@ -66,7 +63,6 @@
 	// .info__text
 	&__text {
 		@include font (16px, 24px);
-
 		margin-bottom: 38px;
 
 		@include media (xs) {

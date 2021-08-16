@@ -3,13 +3,13 @@
 		position: relative;
 		margin-top: 30px;
 	}
+
 	// .map__location
 	&__location {
 		@include media (xs) {
 			height: 509px;
 		}
 	}
-
 
 	// .map__wrapper
 	&__wrapper {
@@ -22,6 +22,7 @@
 		@include media (xs) {
 			width: 400px;
 		}
+
 		@include media (md) {
 			display: none;
 		}
@@ -36,9 +37,11 @@
 	&__content {
 		padding-left: 30px;
 		margin-top: 35px;
+
 		@include media (xs) {
 			padding-left: 20px;
 		}
+
 		@include media (md) {
 			padding-left: 0;
 			margin-top: 5px;
@@ -49,6 +52,7 @@
 	// .map__photo-box
 	&__photo-box {
 		@include flex ($align-items: flex-start, $flex-direction: row);
+
 		@include media (xs) {
 			justify-content: flex-start;
 		}
@@ -84,9 +88,10 @@
 		// .photo-box__title
 		&__title {
 			@include font (16px, 20px);
+
 			@include media (md) {
 				@include font (18px, 22px);
-			}					
+			}
 		}
 
 		// .photo-box__text
@@ -98,19 +103,15 @@
 		// .photo-box__link
 		&__link {
 			text-align: left;
+
 			@include media (xs) {
 				max-width: 155px;
 			}
+
 			@include media (md) {
 				max-width: 100%;
 			}
-		
+
 		}
-	}
-
-	.slider {
-
-		// .slider__item
-		&__item {}
 	}
 }
