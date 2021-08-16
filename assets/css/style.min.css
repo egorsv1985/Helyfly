@@ -665,7 +665,7 @@ template {
 
 .header {
   background-color: #fff; }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .header {
       box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15); } }
   .header__inner {
@@ -673,7 +673,7 @@ template {
     justify-content: space-between;
     align-items: center;
     height: 60px; }
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
       .header__inner {
         height: 100px; } }
   .header__wrapper {
@@ -682,14 +682,13 @@ template {
   .header__phone-city {
     font-size: 14px;
     line-height: 17px;
-    font-family: Montserrat;
     color: #5286EC; }
-    @media screen and (min-width: 576px) {
+    @media (min-width: 576px) {
       .header__phone-city {
         display: none; } }
   .header__phone {
     display: none; }
-    @media screen and (min-width: 576px) {
+    @media (min-width: 576px) {
       .header__phone {
         display: flex; } }
     .header__phone span {
@@ -700,7 +699,7 @@ template {
     font-size: 14px;
     line-height: 17px;
     color: #37373F; }
-  @media screen and (min-width: 1280px) {
+  @media (min-width: 1280px) {
     .header__user {
       display: none; } }
 
@@ -746,11 +745,11 @@ template {
         margin-top: 20px; } }
     @media (min-width: 768px) {
       .main__title {
-        max-width: 600px;
         font-size: 40px;
         line-height: 49px;
         margin-bottom: 25px;
-        margin-top: 35px; } }
+        margin-top: 35px;
+        max-width: 600px; } }
     @media (min-width: 1280px) {
       .main__title {
         max-width: 700px;
@@ -810,14 +809,14 @@ template {
   .main__btn {
     width: 275px;
     height: 68px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #fff;
-    border-radius: 7px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 900;
     text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 7px;
     margin-bottom: 15px; }
     @media (min-width: 768px) {
       .main__btn {
@@ -1046,12 +1045,9 @@ template {
       .info__grid {
         grid-template-columns: 1fr 520px;
         grid-template-rows: 1fr 225px; } }
-  .info__box {
-    display: flex;
-    flex-direction: column; }
-    @media (min-width: 1280px) {
-      .info__box:nth-child(2) {
-        order: -1; } }
+  @media (min-width: 1280px) {
+    .info__box:nth-child(2) {
+      order: -1; } }
   .info__title {
     font-size: 18px;
     line-height: 26px;
@@ -1187,7 +1183,9 @@ template {
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
-    margin-bottom: 7px; }
+    display: block; }
+  .schedule__text {
+    margin-top: 7px; }
   .schedule__btn {
     width: 129px;
     height: 50px;
@@ -1448,12 +1446,13 @@ template {
   font-weight: 500;
   text-align: center;
   color: #5286EC;
-  padding: 10px 15px 0 0;
+  padding: 0 15px 0 0;
   position: relative; }
   @media (min-width: 768px) {
     .reviews__link {
       padding-right: 0;
-      padding-left: 5px; } }
+      padding-left: 5px;
+      padding-top: 10px; } }
   @media (min-width: 1280px) {
     .reviews__link {
       padding-top: 15px; } }
@@ -1546,12 +1545,6 @@ template {
       .footer__top {
         border: none;
         padding-bottom: 45px; } }
-    @media (min-width: 1280px) {
-      .footer__top {
-        padding-bottom: 55px; } }
-    @media (min-width: 1920px) {
-      .footer__top {
-        padding-bottom: 45px; } }
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -1578,8 +1571,10 @@ template {
     padding: 25px 0 20px; }
     @media (min-width: 576px) {
       .footer__bottom {
-        background-color: #faf9f8;
-        padding-top: 0; } }
+        background-color: #faf9f8; } }
+    @media (min-width: 768px) {
+      .footer__bottom {
+        padding-top: 5px; } }
   .footer__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
@@ -1652,6 +1647,9 @@ template {
         min-width: 300px;
         margin-top: 0;
         margin-left: 20px; } }
+    @media (min-width: 768px) {
+      .footer__wrap {
+        margin-left: 0; } }
     @media (min-width: 1280px) {
       .footer__wrap {
         justify-self: start;
