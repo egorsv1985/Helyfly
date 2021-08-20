@@ -81,13 +81,12 @@
 	// /* Лента слайдов */
 	.slick-track {
 		@include flex (center, center);
-
 	}
 
 	// .slider__item
 	&__item {
 		@include flex (center, center, $flex-direction: column);
-		text-align: center
+		text-align: center;
 	}
 
 
@@ -134,8 +133,6 @@
 		border: 0.5px solid $textColorLight;
 		border-radius: 50%;
 		padding: 0;
-
-
 	}
 
 	.slick-dots li button:before {
@@ -150,7 +147,6 @@
 		border-radius: 50%;
 		padding: 0;
 		background-color: $accentColor;
-
 	}
 
 	.slick-prev:before,
