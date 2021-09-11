@@ -217,6 +217,7 @@
 			@include media (xs) {
 
 				right: 32%;
+				top: 30%
 			}
 
 			@include media (sm) {
@@ -226,6 +227,7 @@
 
 			@include media (md) {
 				right: 41%;
+				top: 13%;
 			}
 		}
 
@@ -242,6 +244,7 @@
 
 			@include media (md) {
 				left: 41%;
+				top: 13%;
 			}
 		}
 	}
