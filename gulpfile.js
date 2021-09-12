@@ -23,7 +23,7 @@ const del = require('del'); // для удаления файлов и папо�
 const notify = require('gulp-notify'); //предоставляет информацию об ошибке
 const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
 // const usemin = require('gulp-usemin');
-const cache = require('gulp-cache');
+
 
 
 
@@ -70,6 +70,7 @@ const jsFiles = [
 
 // TASKS
 // объявляем функции под сборки (все пути относительные)
+
 // !!!!!!! Сделано для Deploy  проекта на GitHub pages
 var ghPages = require('gulp-gh-pages');
 
