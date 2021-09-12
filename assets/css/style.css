@@ -825,6 +825,15 @@ template {
     }
 }
 
+.map .container__card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
 .map__map-box {
     display: none;
 }
@@ -842,21 +851,7 @@ template {
         -ms-flex-direction: column;
         flex-direction: column;
         padding: 50px 30px;
-        position: absolute;
-        top: 5%;
-        left: 70px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .map__map-box {
-        left: 150px;
-    }
-}
-
-@media (min-width: 1920px) {
-    .map__map-box {
-        left: 388px;
+        margin-top: 20px;
     }
 }
 
@@ -2196,6 +2191,7 @@ template {
 @media (min-width: 576px) {
     .reviews__link::after {
         right: 32%;
+        top: 30%;
     }
 }
 
@@ -2210,6 +2206,7 @@ template {
 @media (min-width: 1280px) {
     .reviews__link::after {
         right: 41%;
+        top: 13%;
     }
 }
 
@@ -2238,6 +2235,7 @@ template {
 @media (min-width: 1280px) {
     .reviews__link::before {
         left: 41%;
+        top: 13%;
     }
 }
 
