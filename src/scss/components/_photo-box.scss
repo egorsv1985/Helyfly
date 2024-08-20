@@ -16,7 +16,7 @@
 
 		&::before {
 			@include pseudo;
-			@include background (url("../images/info/info-hearts.svg"));
+			@include background (url("@img/icons/info-hearts.svg"));
 			@include wh-px (31, 27);
 			@include pos (absolute, $top: -6%, $right: -60%);
 

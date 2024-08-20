@@ -1,6 +1,6 @@
 .main {
 	color: $primaryColor;
-	@include background(url("../images/main-block/main-block-bg.jpg"));
+	@include background(url("@img/main-block/main-block-bg.jpg"));
 	background-position: 63%;
 
 	@include media (sm) {
@@ -71,7 +71,7 @@
 	// .main__price-box
 	&__price-box {
 		@include wh-px(200, 86);
-		@include background(url("../images/main-block/main-block-price-box.svg"));
+		@include background(url("@img/icons/main-block-price-box.svg"));
 		@include flex(space-around);
 		margin-bottom: 10px;
 		border-radius: 5px;

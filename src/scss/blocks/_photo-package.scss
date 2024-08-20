@@ -115,14 +115,14 @@
 
 		&::before {
 			@include pseudo;
-			@include background (url("../images/photo-package/Arrow.svg"));
+			@include background (url("@img/icons/Arrow.svg"));
 			@include wh-px (11, 6);
 			@include pos (absolute, $top: 12px, $right: -22px);
 		}
 
 		&::after {
 			@include pseudo;
-			@include background (url("../images/photo-package/Arrow.svg"));
+			@include background (url("@img/icons/Arrow.svg"));
 			@include wh-px (11, 6);
 			@include pos (absolute, $top: 12px, $left: -22px);
 		}

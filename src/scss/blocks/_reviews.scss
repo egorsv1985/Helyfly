@@ -128,7 +128,7 @@
 
 		&::before {
 			@include pseudo;
-			@include background (url("../images/reviews/reviews-vector.svg"));
+			@include background (url("@img/icons/reviews-vector.svg"));
 			@include pos (absolute, $top: 0, $left: -8%);
 			@include wh(17px, 15px);
 
@@ -210,7 +210,7 @@
 
 		&::after {
 			@include pseudo;
-			@include background (url("../images/reviews/reviews-link-arrow.png"));
+			@include background (url("@img/reviews/reviews-link-arrow.png"));
 			@include pos (absolute, $top:50%, $right:19%);
 			@include wh (6px, 11px);
 
@@ -236,7 +236,7 @@
 
 			@include media (sm) {
 				@include pseudo;
-				@include background (url("../images/reviews/reviews-link-arrow.png"));
+				@include background (url("@img/reviews/reviews-link-arrow.png"));
 				@include pos (absolute, $top:50%, $left:36%);
 				@include wh (6px, 11px);
 				transform: rotate(90deg);
